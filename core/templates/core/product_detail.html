@@ -1,0 +1,9 @@
+<a href="/">Back to products</a>
+
+{% if product %}
+<h2>Product Details</h2>
+<p><strong>Name:</strong> {{ product.name }}</p>
+<p><strong>Price:</strong> PHP {{ product.price }}</p>
+{% else %}
+<p>Product not found.</p>
+{% endif %}
