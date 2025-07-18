@@ -1,12 +1,12 @@
 <h1>Login</h1>
 {% if messages %}
-<ul class="messages">
+<ul>
     {% for message in messages %}
-    <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
-        {% endfor %}
+    <li>{{ message }}</li>
+    {% endfor %}
 </ul>
 {% endif %}
-<form method="POST" action="">
+<form method="POST" action="#">
     {% csrf_token %}
     <label for="username">Username</label>
     <input type="text" name="username">

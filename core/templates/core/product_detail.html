@@ -2,12 +2,11 @@
 <a href="/">Back to products</a>
 {% if product %}
 <p>Product name: {{ product.name }}</p>
-<p>Product price (PHP): {{ product.price }}</p>
+<p>Product price: {{ product.price }}</p>
 {% endif %}
 
-
 <h2>Add to cart</h2>
-<form method="POST" action="">
+<form method="POST" action="#">
     {% csrf_token %}
     <input type="hidden" name="product_id" value="{{ product.id }}">
     <label for="quantity">Quantity</label>
