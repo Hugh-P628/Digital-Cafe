@@ -1,6 +1,7 @@
 from django.urls import path
 
-from . import views # This . package just means "the current package; we are importing the sister file "views.py"
+# This . package just means "the current package; we are importing the sister file "views.py"
+from . import views
 
 urlpatterns = [
     path("", views.index, name="index")
