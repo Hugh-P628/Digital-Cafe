@@ -5,5 +5,5 @@ urlpatterns = [
     path("", views.index, name="index"),
     path("product/<int:product_id>/", views.product_detail, name="product_detail"),
     path("accounts/login/", views.login_view,
-         name="login_view"),  # ✅ Add this line
+         name="login_view"),  # ✅ Keep this!
 ]
